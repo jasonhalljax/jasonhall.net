@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jason Hall</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="granim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="canvas-image-blending"></canvas>
+
+    <div class="main-content" style="text-align: center; width: 100%; position: absolute">
+      <center>
+
+        <div class="" style="height: 750px;">
+          <h1 style="padding-top: 230px; color: white;">Hi, my name is Jason Hall</h1>
+          <p style="padding-top: 25px; color: white;" id="app"></p>
+        </div>
+
+        <h2 style="padding-bottom: 10px; padding-top: 10px;">Introduction</h2>
+
+        <!-- Introduction -->
+        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 20px;">
+          <div class="big-container-left" style="">
+            <p class="time-text">Fun fact: In 1929, Baylor University Hospital in Dallas introduced one of the earliest U.S. health insurance plans, initially covering local schoolteachers. This prototype eventually evolved into the Blue Cross system.</p>
+            <p style="padding-bottom: 5px;">Hello, I’m Jason Hall. I’ve spent 25 years in the healthcare industry, following a decade in banking. My career has centered on data: I started in Quality Assurance, testing data propagation jobs, then moved into Test Data Management, where I built an ETL-based process from scratch that quadrupled our environment setup speed. I’ve also worked with FHIR interoperability standards, and created a process to introduce synthetic data into lower environments for testing. In addition, I also have a love for data visualization and BI.</p>
+            <p style="padding-bottom: 5px;">I’m passionate about continuous improvement, starting with my own knowledge. Each night, I set aside time to learn new skills and keep pace with the ever-evolving IT landscape. Below, I’ve outlined some of these efforts.</p>
+          </div>
+          <div class="small-container-right">
+            <img src="assets/headshot.png" class="title-image">
+          </div>
+        </div>
+
+        <h2 style="padding-bottom: 20px">My Current Projects and Education</h2>
+
+        <!-- Current Project #1 -->
+        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
+          <div class="big-container-left">
+            <h3>Python</h3>
+            <p class="time-text">Sep 2024 - TBD</p> <!--Add your own dates-->
+            <p>Python is the basis for much of what I want to learn in the future. It's a natural launching point into Data Science, Machine Learning, and AI topics.</p>
+            <button style="padding-bottom: 5px;" type="button" class="btn btn-outline-success" id="btn1">See more</button>
+          </div>
+          <div class="small-container-right">
+            <img src="assets/Python-Symbol.png" class="title-image">
+          </div>
+        </div>
+
+        <!-- Current Project #2 -->
+        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
+          <div class="big-container-left">
+            <h3>Miscellaneous learnings, advanced -> highly advanced</h3>
+            <p class="time-text">January 2025 - TBD</p> <!--Add your own dates-->
+            <p>Various other learnings to bring me to a highly advanced level - Git, SQL, FHIR, test data management practices, and data lake pipelines.</p>
+            <button style="padding-bottom: 5px;" type="button" class="btn btn-outline-success" id="btn2">See more</button>
+          </div>
+          <div class="small-container-right">
+            <img src="assets/GitHub-logo.png" class="title-image">
+          </div>
+        </div>
+
+        <!-- Current Project #3 -->
+        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
+          <div class="big-container-left">
+            <h3>Implement homelab reverse proxy</h3>
+            <p class="time-text">January 2025 - TBD</p> <!--Add your own dates-->
+            <p>Implement a reverse proxy/HTTPS certificates into the homelab. I have VPN functionality currently, but I don't usually need full internal network access. NginX Proxy Manager/Let's Encrypt seem to be the best option for me.</p>
+            <button style="padding-bottom: 5px;" type="button" class="btn btn-outline-success" id="btn3">Visit</button>
+          </div>
+          <div class="small-container-right">
+            <img src="assets/nginx_lets_encrypt.jpg" class="title-image">
+          </div>
+        </div>
+
+        <!-- Completed projects -->
+        <h2 style="padding-bottom: 20px">My Completed Projects (recent to old)</h2>
+
+        <!-- Completed Project #1 -->
+        <div class="flex-container" style="padding-bottom: 100px; padding-top: 50px;">
+          <div class="small-container-left" style="">
+            <img src="assets/dash.jpg" alt="" class="title-image">
+          </div>
+          <div class="big-container-right" style="">
+            <h3>Various trainings</h3>
+            <p class="time-text">December 2024</p>
+            <p style="padding-bottom: 10px;">I had an end-of-year deadline for various trainings, including APIs and BI data visualizations.</p>
+            <button type="button" class="btn btn-outline-success" id="btn4">See more</button>
+          </div>
+        </div>
+
+        <!-- Completed Project #2 -->
+        <div class="flex-container" style="padding-bottom: 100px; padding-top: 50px;">
+          <div class="small-container-left" style="">
+            <img src="assets/truenas.jpg" alt="" class="title-image">
+          </div>
+          <div class="big-container-right" style="">
+            <h3>Migration from UnRAID to Proxmox/TrueNAS for homelab</h3>
+            <p class="time-text">December 2024</p>
+            <p style="padding-bottom: 10px;">For years I've run UnRAID as the main hub for my homelab. I wanted to separate storage and compute for various reasons, and completed this recently</p>
+            <button type="button" class="btn btn-outline-success" id="btn5">See more</button>
+          </div>
+        </div>
+
+        <!-- Completed Project #3 -->
+        <div class="flex-container" style="padding-bottom: 100px; padding-top: 50px;">
+          <div class="small-container-left" style="">
+            <img src="assets/workspace.jpg" alt="" class="title-image">
+          </div>
+          <div class="big-container-right" style="">
+            <h3>Big workspace upgrade</h3>
+            <p class="time-text">September 2024</p>
+            <p style="padding-bottom: 10px;">Performed a big upgrade to my home office workspace, involving a new microphone, webcam, and large monitors.</p>
+            <button type="button" class="btn btn-outline-success" id="btn6">Visit</button>
+          </div>
+        </div>
+
+        <!-- Hobbies -->
+        <h2 style="padding-bottom: 20px">My hobbies</h2>
+
+        <div class="row">
+          <!-- FIRST HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <img src="assets/hobby_homelab.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Homelab</p>
+                <button type="button" class="btn btn-outline-success" id="hobbyBtn1">See more</button>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/hobby_scuba.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Scuba</p>
+                  <button type="button" class="btn btn-outline-success" id="hobbyBtn2">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/hobby_movies.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Movies</p>
+                  <button type="button" class="btn btn-outline-success" id="hobbyBtn3">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4th HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/hobby_college_athletics.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">College Athletics</p>
+                  <button type="button" class="btn btn-outline-success" id="hobbyBtn4">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5th HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/hobby_biking.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Biking</p>
+                  <button type="button" class="btn btn-outline-success" id="hobbyBtn5">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6th HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/hobby_lawn_care.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lawn Care</p>
+                  <button type="button" class="btn btn-outline-success" id="hobbyBtn6">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact me / ending section -->
+        <h2 style="padding-bottom: 20px; padding-top: 80px;">Contact Me</h2>
+
+        <img src="assets/closing.jpg"  class="rounded-corners" style="">
+
+        <br> <br>
+
+        <p style="padding-bottom: 20px;">I'd love to get in contact with you, so please feel free to reach me on any of these platforms. </p>
+
+        <a href="mailto:jasonhalljax@gmail.com" class="fa fa-paper-plane" style="margin-right: 10px"></a>
+        <a href="https://www.linkedin.com/in/jasonhalljax" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin" style="margin-right: 10px"></a>
+        <a href="https://github.com/jasonhalljax" target="_blank" rel="noopener noreferrer" class="fa fa-github"></a>
+
+        <br> <br> <br>
+
+        <p>Made with ❤ with HTML, CSS, Javascript, & Bootstrap. Template from <a href="https://rosacodes.gumroad.com/l/personal-website-template">Rosacodes</a></p>
+
+        <!--MODALS-->
+
+        <!-- Modal for Button #1 - change inside information such as images and text to make it your own-->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="closeModal1">&times;</span>
+            <h2>Python</h2>
+            <br>
+            <div id="carouselIndicators1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/python_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/python_carousel_2.png" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/python_carousel_3.png" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <p>Python is at the core of many of the directions I'd like to take my learning, from data science, data engineering, machine learning, and AI. I aim to be an expert in Python itself, plus several libraries, in early 2025.</p>
+          <p>Libraries being learned:</p>
+            <ul>
+              <li>NumPy</li>
+              <li>SciPy</li>
+              <li>Matplotlib</li>
+              <li>Pandas</li>
+              <li>Scikit-learn</li>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+            </ul>
+            <p>Skills learned:</p>
+            <ul>
+              <li>Data Science</li>
+              <li>Data Analysis/Analytics</li>
+              <li>Data Visualization</li>
+            </ul>
+            <p>My goal is to be valuable to any company I work for in many different ways. Any company that creates, collects, handles, analyzes, and disseminates data needs employees with these skills. This will be learned in various online classes.</p>
+          </div>
+        </div>
+
+        <!-- Modal for Button #2 - change inside information such as images and text to make it your own-->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="closeModal2">&times;</span>
+            <h2>Various Learnings</h2>
+            <br>
+            <div id="carouselIndicators2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/misc_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/misc_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/misc_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <p>I'm advanced to highly-advanced at some skills, but there's always more to learn. I'm very familiar with SQL, git/Gitlab, test data management practices, and data pipelines, I want to increase my knowledge in these areas to truly master them. These skills are 100% applicable to my current job, as well as most prospective jobs I'd be interested in. This is therefore a high-priority task for me.</p>
+          <p>Skills to be advanced:</p>
+          <ul>
+            <li>Advanced SQL (Window functions, CTEs, etc)</li>
+            <li>git</li>
+            <li>Best practice/model test data management processes</li>
+            <li>Data Lake/Gold Copy best practices and techniques</li>
+            <li>FHIR interconnectivity</li>
+          </ul>
+          <p>Benefits for employer:</p>
+          <ul>
+            <li>Modern data management practices</li>
+            <li>Optimized processes</li>
+            <li>Flexibility in data engineering and delivery</li>
+          </ul>
+          <p>These skills will be learned from various online classes, and put into use at work immediately.</p>
+        </div>
+        </div>
+
+        <!--Button #3 goes to outside link, so no modal is necessary-->
+
+        <!-- Modal for Button #4 - change inside information such as images and text to make it your own-->
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <span class="closeModal4">&times;</span>
+            <h2>Various trainings</h2>
+            <br>
+            <div id="carouselIndicators4" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/desksetup3.jpeg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/desk setup.webp" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/desksetup4.webp" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>I had a deadline for a few training classes to be the end of 2024, listed below.</p>
+            <p>Skills learned:</p>
+            <ul>
+              <li>Excel/Power Query data visualizations</li>
+              <li>OAuth2/OIDC/SSO</li>
+              <li>API utilization via Postman</li>
+            </ul>
+            <p>Applicability at work:</p>
+            <ul>
+              <li>Directly able to use this knowledge to build valuable dashboards highlighting compliance and statistical insights</li>
+              <li>Ability to use Postman for API development, testing, and utilization</li>
+            </ul>
+            <p>These trainings set the stage for 2025.</p>
+          </div>
+        </div>
+
+        <!-- Modal for Button #5 - change inside information such as images and text to make it your own-->
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <span class="closeModal5">&times;</span>
+            <h2>Homelab Migration</h2>
+            <br>
+            <div id="carouselIndicators5" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/project5_2.webp" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/project5.webp setup.webp" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/project5_3.jpeg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators5" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>For years I've run UnRAID reliably on a single server. However, for both learning opportunities and in observance of data center best practices, I wanted to separate stoage and compute. Therefore, the old UnRAID server became a storage-only NAS using TrueNAS running ZFS (2 x RAIDZ2 vdevs with 6 HDDs each), and a new Proxmox server was built to hold all containers and applications. This separation allows a lot more flexibility and learning opportunities.</p>
+            <p>Skills used:</p>
+            <ul>
+              <li>Linux</li>
+              <li>ZFS</li>
+              <li>Docker</li>
+              <li>LXC</li>
+              <li>Networking</li>
+            </ul>
+            <p>Skills learned:</p>
+            <ul>
+              <li>App/storage server interoperability</li>
+              <li>Inner workings of filesystems</li>
+              <li>Containerization</li>
+            </ul>
+            <p>This was on my to-do list for the homelab for about a year and is now running great. Shout out to tteck (RIP) for his magnificent Proxmox scripts. This indirectly contributed to work, as I can now run a wider vaiety of applications, such as my own FHIR server and synthetic FHIR data generator.</p>
+          </div>
+        </div>
+
+        <!--Button #6 goes to outside link, so no modal is necessary-->
+
+        <!-- MODALS FOR HOBBIES -->
+
+        <!-- Modal for Hobby Button #1 - change inside information such as images and text to make it your own-->
+        <div id="modalHobby1" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby1">&times;</span>
+            <h2>Homelab</h2>
+            <br>
+            <div id="carouselIndicatorsHobby1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/homelab_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/homelab_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/homelab_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>I've run some sort of home server since 2012, with FreeNAS 8.3. I started with 6 4TB drives in RAIDZ2 for 16TB usable space, an astronomical amount for me at the time. I switched to UnRAID around the time of the ill-fated version 10 upgrade, and only just recently switched back to TrueNAS - unbelievably, on the same SuperMicro motherboard/Xeon/ECC RAM I used in 2012! So far, it's still working great as a pure NAS. I run all kinds of services and apps, and am currently creating a (very) complex map diagram.</p>
+          </div>
+        </div>
+
+        <!-- Modal for Hobby Button #2 - change inside information such as images and text to make it your own-->
+        <div id="modalHobby2" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby2">&times;</span>
+            <h2>Scuba</h2>
+            <br>
+            <div id="carouselIndicatorsHobby2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/scuba_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/scuba_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/scuba_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>My wife and I are both avid scuba divers. I hold an Advanced Scuba diver certification, and she holds a Rescue diver certification (one higher than me). Though the water is cold, we frequently dive in Florida's many springs (they are all 72 degrees F year-round, as they are all fed by the state aquifer), though our favorite destination are various sites around the Carribean. We both been to around 100 feet deep, which is close to the deepest we can go based on the oxygen/nitrogen percentage of the Nitrox air blend we prefer to use. Descending deeper than that risks oxygen toxicity.</p>
+          </div>
+        </div>
+
+        <!-- Modal for Hobby Button #3 - change inside information such as images and text to make it your own-->
+        <div id="modalHobby3" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby3">&times;</span>
+            <h2>Movies/Home Theater</h2>
+            <br>
+            <div id="carouselIndicatorsHobby3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/movies_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/movies_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/movies_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>I love my movies, and watch them whenever I can. Having a great surround sound system with multiple subwoofers, a big OLED screen, and a media server to stream high-bitrate legal movie rips means no more trips to the theater are necessary. Backyard movies with neighbors in great weather is fantastic. I just need a popcorn machine!</p>
+          </div>
+        </div>
+
+        <!-- Modal for Hobby Button #4 - change inside information such as images and text to make it your own-->
+        <div id="modalHobby4" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby4">&times;</span>
+            <h2>College Athletics</h2>
+            <br>
+            <div id="carouselIndicatorsHobby4" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/college_athletics_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/college_athletics_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/college_athletics_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>My wife and I frequently go to football games at her alma mater, the University of Central Florida (UCF) in nearby Orlando. There's not much like the energy in a good game. We've also recently begun going to basketball games as well. I'm grateful for it being indoors, as it's a winter sport.</p>
+          </div>
+        </div>
+
+        <!-- Modal for Hobby Button #5 - change inside information such as images and text to make it your own-->
+        <div id="modalHobby5" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby5">&times;</span>
+            <h2>Biking</h2>
+            <br>
+            <div id="carouselIndicatorsHobby5" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/biking_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/biking_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/biking_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby5" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>My wife and I both have bikes and enjoy riding. Though we have mountain/offroad bikes, we usually stick to paved routes. There's a great, 14-mile trail (28 miles round trip) that used to be a railroad, and is now a multi-use trail as a result of the nationwide Rails-to-Trails program we use frequently.</p>
+          </div>
+        </div>
+
+        <!-- Modal for Hobby Button #5 - change inside information such as images and text to make it your own-->
+        <div id="modalHobby6" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby6">&times;</span>
+            <h2>Lawn Care</h2>
+            <br>
+            <div id="carouselIndicatorsHobby6" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/lawn_care_carousel_1.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/lawn_care_carousel_2.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/lawn_care_carousel_3.jpg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby6" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby6" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>Some may call me crazy, but I love getting outside and caring for the yard. Whether it's edging, weed trimming, mowing or blowing, I love the smell and look of a well-cared for yard. I mow twice a week in the peak growing season of Florida. Fun fact: my grass type is St Augustine, and is the Floratam variant. Floratam was engineered/developed to be more resistant to chinch bugs, which are somewhat common here. The University of Florida and Texas A&M university created Floratam, hence the name. FLORA for Florida, and TAM for Texas A&M.</p>
+          </div>
+        </div>
+
+      </center>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
